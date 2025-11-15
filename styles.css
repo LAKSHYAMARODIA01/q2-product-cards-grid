@@ -1,0 +1,80 @@
+/* Reset + Box Model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Screen-reader only class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.product-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  width: 100%;
+}
+
+/* Cards */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fff;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin: 12px 0 8px;
+}
+
+.card p {
+  margin-bottom: 12px;
+}
+
+.card .btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid black;
+  color: black;
+}
+
+/* Hover effect */
+.card:hover {
+  border-color: black;
+}
+
+/* Featured card spans full width */
+.featured {
+  grid-column: 1 / -1;
+  background: #f8f8f8;
+  border: 2px solid #aaa;
+}
